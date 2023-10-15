@@ -89,4 +89,20 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.wrap {
+  width: 630px;
+}
+.highchart {
+  margin-top: 40px;
+}
+.check_title {
+  font-weight: bold;
+  margin-bottom: 11px;
+}
+@media screen and (max-width: 425px) {
+  .check_title {
+    font-size: 25px;
+  }
+}
+</style>

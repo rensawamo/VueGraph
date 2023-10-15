@@ -93,4 +93,20 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.wrap {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.prefecture_name {
+  margin-left: 10px;
+}
+@media screen and (max-width: 425px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+}
+</style>
