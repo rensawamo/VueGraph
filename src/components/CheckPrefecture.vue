@@ -58,7 +58,6 @@ export default {
           headers: { "X-API-KEY": import.meta.env.VITE_MY_API_KEY },
         }
       );
-      console.log("response", response);
       return response;
     },
 
@@ -105,7 +104,7 @@ export default {
 @media screen and (max-width: 425px) {
   .wrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 25px;
+
     margin-bottom: 100px;
   }
 }

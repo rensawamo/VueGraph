@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <div class="wrap">
+      <p class="total_title">都道府県別の総人口推移グラフ</p>
+      <p class="check_title">都道府県</p>
       <div>
-        <p class="check_title">都道府県</p>
         <CheckPrefecture
           @onAddSeries="addSeries"
           @onRemoveSeries="removeSeries"
         />
       </div>
+
       <div>
         <Highcharts class="highchart" :options="chartOptions" />
       </div>
@@ -28,7 +30,7 @@ export default {
     return {
       chartOptions: {
         title: {
-          text: "都道府県別の総人口推移グラフ",
+          text: "",
         },
         credits: {
           enabled: false,
@@ -90,11 +92,18 @@ export default {
 </script>
 
 <style scoped>
+.total_title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
 .wrap {
   width: 630px;
 }
 .highchart {
-  margin-top: 40px;
+  margin-top: 20px;
+  width: 110%;
 }
 .check_title {
   font-weight: bold;
@@ -102,7 +111,14 @@ export default {
 }
 @media screen and (max-width: 425px) {
   .check_title {
-    font-size: 25px;
+    font-size: 15px;
+  }
+  .wrap {
+    width: 100%;
+    font-size: 12px;
+  }
+  #app {
+    padding: 0;
   }
 }
 </style>
