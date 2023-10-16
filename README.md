@@ -1,30 +1,8 @@
-# VueGraph
+# 都道府県別の総人口推移グラフ
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+<img width="778" alt="image" src="https://github.com/rensawamo/VueGraph/assets/106803080/a644f134-5daa-4f7e-8ef1-b00acc6241b1">
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1960年~2045年までの人口の推移をグラフで可視化することが可能です。
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# VueGraph
+https://rensawamo.github.io/VueGraph/
